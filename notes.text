@@ -1,0 +1,28 @@
+Functional Component
+
+    used when presenting static data
+    can't handle fetching data
+    Easier to write
+    example:
+        const Header = () => {
+            return <Text>Hi There!</Text>
+        }
+Classic Component
+    used for dynamic sources of data
+    handles any data that might change
+    knows when it gets rerendered to devices
+    MORE CODE TO WRITE!
+    exmaple:
+        class Header extends Component {
+            render() {
+                return <Text>Hi There!</Text>
+            }
+        }
+Props
+    props are handed down from a parent to a child - the child is typically a display function whereas teh parent can have state changes (meaning the user interactions causes the data the needs to be displayed to change). 
+
+State
+    state is a plain javascript object that is used to record and respond to user-triggered events.
+    When you need to update state use this.setState
+    ONly class based components use state and have access to it!
+
